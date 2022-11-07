@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Ciudades Desordenadas</title>
+</head>
+<body>
+    <section id="pantalla-inicio">
+        <h2>Ordena las <span>letras</span></h2>
+        <h2>y adivina las <span>ciudades</span></h2>
+        <h2>que he visitado por ahora</h2>
+        <button onclick="comenzarJuego()">JUGAR AHORA!</button>
+    </section>
+    <section id="pantalla-juego">
+        <h2>Ordena las <span>letras</span></h2>
+        <h2>y adivina las <span>ciudades</span></h2>
+        <h2>que he visitado por ahora</h2>
+
+        <div class="contenedor-ciudad" id="ciudad">
+            <div class="letra">B</div>
+            <div class="letra">E</div>
+            <div class="letra">L</div>
+            <div class="letra">A</div>
+            <div class="letra">O</div>
+            <div class="letra">R</div>
+            <div class="letra">A</div>
+            <div class="letra">N</div>
+            <div class="letra">C</div>
+        </div>
+
+        <input type="text" id="ciudadIngresada" onkeyup="comparar()">
+
+        <div id="myProgress">
+            <div id="myBar"></div>
+        </div>
+
+        <div class="acertadas">
+            <i class="fa-solid fa-thumbs-up"></i>
+            <span id="contador">0</span>
+        </div>
+    </section>
+    <section id="pantalla-final">
+        <h2>RESULTADO FINAL</h2>
+        <h3 id="resultado">ACERTASTE <span id="acertadas">0</span>CIUDADES</h3>
+        <button onclick="comenzarJuego()">JUGAR OTRA VEZ!</button>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+body{
+    background-image: url(img/5778540.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+    height: 100vh;
+}
+section{
+   max-width: 90%;
+   width: 100%;
+   padding: 50px;
+   margin: auto;
+   text-align: center;
+}
+
+#pantalla-inicio{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#pantalla-juego{
+    display: none;
+}
+#pantalla-final{
+    display: flex;
+}
+
+/* pantalla principal */
+#pantalla-inicio h2{
+    font-size: 60px;
+    text-shadow: 3px 3px 10px black;
+
+}
+#pantalla-inicio h2 span{
+    color: yellow;
+}
+#pantalla-inicio button{
+    font-size: 30px;
+    display: inline-block;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    background:red;
+    color:black;
+}
+#pantalla-inicio button:hover{
+    background-color:yellow;
+}
+
+/* pantalla ingame */
+#pantalla-juego h2{
+    font-size: 40px;
+    text-shadow: 3px 3px 10px black;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+#pantalla-juego h2 span{
+    color: yellow;
+}
+#pantalla-juego .contenedor-ciudad{
+    margin-top: 40px;
+}
+
+#pantalla-juego .contenedor-ciudad .letra{
+    display: inline-block;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 10px;
+    width: 100%;
+    color: black;
+    background-color: red;
+    font-size: 50px;
+    margin: 2px;
+    text-align: center;
+    font-weight: 800;
+    line-height: 80px;
+}
+#pantalla-juego input{
+    display: inline-block;
+    font-size: 50px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    letter-spacing: 4PX;
+}
+#myProgress {
+    width: 300px;
+    margin: auto;
+    background:white;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+  
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color:red;
+}
+
+#pantalla-juego .acertadas{
+    margin-top: 30px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* pantalla resultado(final) */
+#pantalla-final{
+    font-size: 30px;
+    display: none;
+    flex-direction: column;
+}
+#pantalla-final h2{
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+#pantalla-final h3 span{
+    display: block;
+    font-size: 70px;
+    color: red;
+}
+#pantalla-final button{
+    width: fit-content;
+    margin: auto;
+    font-size: 30px;
+    display: inline-block;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    background:red;
+    color:black;
+}
+#pantalla-final button:hover{
+    cursor: pointer;
+    background:yellow;
+
+}
+
+
+@media screen and (max-width:1000px) {
+    section{
+        width: 100%;
+    }
+    #pantalla-juego .contenedor-ciudad .letra{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+    #pantalla-juego input{
+        display: block;
+        width: 80%;
+        margin: 40px auto;
+        font-size: 30px;
+    }
+}

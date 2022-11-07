@@ -3,7 +3,7 @@ body{
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    color: white;
+    color: black;
     height: 100vh;
 }
 section{
@@ -37,6 +37,7 @@ section{
 #pantalla-inicio h2 span{
     color: yellow;
 }
+
 #pantalla-inicio button{
     font-size: 30px;
     display: inline-block;
@@ -89,7 +90,7 @@ section{
     border-bottom: 2px solid white;
     margin-top: 40px;
     text-align: center;
-    color: white;
+    color: black;
     letter-spacing: 4PX;
 }
 #myProgress {
@@ -123,8 +124,13 @@ section{
 #pantalla-final h2{
     margin-bottom: 30px;
     text-decoration: underline;
+    color:black;
 }
-
+#pantalla-final h3{
+    display: block;
+    font-size: 70px;
+    color: black;
+}
 #pantalla-final h3 span{
     display: block;
     font-size: 70px;

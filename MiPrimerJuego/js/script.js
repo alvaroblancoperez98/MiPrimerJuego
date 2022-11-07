@@ -32,8 +32,8 @@ function desordenarCiudades(){
     }
 }
 
-function mostrarNuevaciudad(){
 
+function mostrarNuevaciudad(){
     //controlo si termina el array
     if(posActual >= ciudades.length){
         mostrarPantallaFinal();
@@ -55,8 +55,8 @@ function mostrarNuevaciudad(){
         div.innerHTML = ciudad[i];
         contenedorciudad.appendChild(div);
     }
-
 }
+
 //Funcion para mostrar el resultado y la pantalla final
 function mostrarPantallaFinal(){
     clearInterval(idInterval);
@@ -80,11 +80,11 @@ function comparar(){
     }
 }
 
-
+//Funcion que comprueba si myBar esta completo(para reiniciarlo) y vacia la ciudad que esta ingresando cuando se acabe el tiempo
 function move() {
   if (x == 0) {
     x= 1;
-    let elem = document.getElementById("myBar");
+    let elem= document.getElementById("myBar");
     let width = 1;
     idInterval = setInterval(frame, 60);
     function frame() {
@@ -92,7 +92,7 @@ function move() {
         clearInterval(idInterval);
         x = 0;
         posActual++;
-        ciudadIngresado = document.getElementById("ciudadIngresada").value="";
+        ciudadIngresada = document.getElementById("ciudadIngresada").value="";
         mostrarNuevaciudad();
       } else {
         width++;
@@ -100,7 +100,8 @@ function move() {
       }
     }
   }
-}
+} 
+
 //boton de comenzar
 function comenzarJuego(){
     ciudadesDesordenadas=[];
